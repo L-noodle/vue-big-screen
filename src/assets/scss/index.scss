@@ -1,0 +1,110 @@
+#index {
+  * {
+    color: #D3D6DD;
+  }
+
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+
+  .bg {
+    padding: 1rem;
+    background-image: url("../assets/pageBg.png");
+  }
+
+  .title {
+    position: relative;
+    width: 500px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .title-text {
+      font-size: 2rem;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    .title-bototm {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  // 平行四边形
+  .react-left {
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transform: skewX(-45deg);
+
+    .react-after {
+      position: absolute;
+      right: -25px;
+      top: 0px;
+      height: 50px;
+      width: 50px;
+      background-color: #0f1325;
+      transform: skewX(45deg);
+    }
+
+    .text {
+      display: inline-block;
+      transform: skewX(45deg);
+    }
+  }
+
+  .react-right {
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transform: skewX(45deg);
+
+    .react-before {
+      position: absolute;
+      left: -25px;
+      top: 0px;
+      height: 50px;
+      width: 50px;
+      background-color: #0f1325;
+      transform: skewX(-45deg);
+
+    }
+
+    .text {
+      display: inline-block;
+      transform: skewX(-45deg);
+    }
+  }
+
+
+  .body-box {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    //下方区域的布局
+    .content-box {
+      display: grid;
+      grid-template-columns: 2fr 3fr 5fr 3fr 2fr;
+    }
+
+    // 底部数据
+    .bototm-box {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+
+}

@@ -1,0 +1,186 @@
+@import "./variables";
+
+//  全局样式
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #343440;
+  text-decoration: none;
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+}
+
+//浮动
+.float-r {
+  float: right;
+}
+
+//浮动
+.float-l {
+  float: left;
+}
+
+
+// 字体加粗
+.fw-b {
+  font-weight: bold;
+}
+
+//文章一行显示，多余省略号显示
+.title-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bg-color-black {
+  background-color: #0f1325;
+}
+
+.bg-color-blue {
+  background-color: #1A5CD7;
+}
+
+
+.colorBlack {
+  color: #272727 !important;
+
+  &:hover {
+    color: #272727 !important;
+  }
+}
+
+.colorText {
+  color: #D3D6DD !important;
+
+  &:hover {
+    color: #D3D6DD !important;
+  }
+}
+
+.colorBlue {
+  color: #1A5CD7 !important;
+
+  &:hover {
+    color: #1A5CD7 !important;
+  }
+}
+
+
+//颜色
+@each $colorkey,
+$color in $colors {
+  .text-#{$colorkey} {
+    color: $color;
+  }
+
+  .bg-#{$colorkey} {
+    background-color: $color;
+  }
+}
+
+
+//对齐
+@each $var in (left, center, right) {
+  .text-#{$var} {
+    text-align: $var !important;
+  }
+}
+
+//flex
+@each $key,
+$value in $flex-jc {
+  .jc-#{$key} {
+    justify-content: $value;
+  }
+}
+
+@each $key,
+$value in $flex-ai {
+  .ai-#{$key} {
+    align-items: $value;
+  }
+}
+
+//字体
+@each $fontkey,
+$fontvalue in $font-sizes {
+  .fs-#{$fontkey} {
+    font-size: $fontvalue * $base-font-size;
+  }
+}
+
+
+//.mt-1 => margin top
+//spacing
+
+@each $typekey,
+$type in $spacing-types {
+
+  //.m-1
+  @each $sizekey,
+  $size in $spacing-sizes {
+    .#{$typekey}-#{$sizekey} {
+      #{$type}: $size * $spacing-base-size;
+    }
+  }
+
+  //.mx-1
+  @each $sizekey,
+  $size in $spacing-sizes {
+    .#{$typekey}x-#{$sizekey} {
+      #{$type}-left: $size * $spacing-base-size;
+      #{$type}-right: $size * $spacing-base-size;
+    }
+
+    .#{$typekey}y-#{$sizekey} {
+      #{$type}-top: $size * $spacing-base-size;
+      #{$type}-bottom: $size * $spacing-base-size;
+    }
+  }
+
+  //.mt-1
+  @each $directionkey,
+  $direction in $spacing-directions {
+
+    @each $sizekey,
+    $size in $spacing-sizes {
+      .#{$typekey}#{$directionkey}-#{$sizekey} {
+        #{$type}-#{$direction}: $size * $spacing-base-size;
+      }
+    }
+  }
+
+  .#{$typekey} {
+    #{$type}: 0;
+  }
+}
