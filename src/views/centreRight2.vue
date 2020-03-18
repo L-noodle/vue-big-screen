@@ -2,7 +2,7 @@
   <div id="centreRight2">
     <div class="bg-color-black">
       <div class="d-flex pt-2 pl-2">
-         <span style="color:#5cd9e8">
+        <span style="color:#5cd9e8">
           <icon name="align-left"></icon>
         </span>
         <span class="fs-xl text mx-2">产品销售渠道分析</span>

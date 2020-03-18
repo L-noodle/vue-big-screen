@@ -43,7 +43,10 @@
             <div class="react-left bg-color-blue mr-3">
               <span class="text fw-b">构建数据分析</span>
             </div>
-            <div class="react-left mr-4" style="width: 500px; background-color: #0f1325;">
+            <div
+              class="react-left mr-4"
+              style="width: 500px; background-color: #0f1325; text-align: right;"
+            >
               <span class="react-after"></span>
               <span class="text">2020年03月16日 周一 12:00</span>
             </div>
@@ -65,7 +68,7 @@
             </div>
             <!-- 中间 -->
             <div>
-              <center/>
+              <center />
             </div>
             <!-- 中间 -->
             <div>
