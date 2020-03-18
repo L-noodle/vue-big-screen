@@ -6,7 +6,7 @@
           <icon name="chart-bar"></icon>
         </span>
         <div class="d-flex">
-          <span class="fs-xl text mx-2">构建通过率</span>
+          <span class="fs-xl text mx-2">任务通过率</span>
           <dv-decoration-3 style="width:100px;height:20px; position:relative;top:-3px;" />
         </div>
       </div>

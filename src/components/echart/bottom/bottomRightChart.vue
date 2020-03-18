@@ -205,19 +205,19 @@ export default {
           },
           indicator: [
             {
-              name: "全程距离(m)",
+              name: "服务态度",
               max: maxData
             },
             {
-              name: "平均速度(km/h)",
+              name: "产品质量",
               max: 10
             },
             {
-              name: "最快速度(km/h)",
+              name: "任务效率",
               max: 12
             },
             {
-              name: "总计时间(h)",
+              name: "售后保障",
               max: 3.5
             }
           ]

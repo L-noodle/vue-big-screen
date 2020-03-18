@@ -18,11 +18,11 @@
       </div>
       <div class="percent">
         <div class="item  bg-color-black">
-          <span>今日MR通过率</span>
+          <span>今日任务通过率</span>
           <centerChart1 />
         </div>
         <div class="item  bg-color-black">
-          <span>今日MR达标率</span>
+          <span>今日任务达标率</span>
           <centerChart2 />
         </div>
         <div class="water">
@@ -42,7 +42,7 @@ export default {
     return {
       titleItem: [
         {
-          title: "今年累计构建次数",
+          title: "今年累计任务建次数",
           number: {
             number: [120],
             toFixed: 1,
@@ -50,7 +50,7 @@ export default {
           }
         },
         {
-          title: "本月累计构建次数",
+          title: "本月累计任务次数",
           number: {
             number: [18],
             toFixed: 1,
@@ -58,7 +58,7 @@ export default {
           }
         },
         {
-          title: "今日累计构建次数",
+          title: "今日累计任务次数",
           number: {
             number: [2],
             toFixed: 1,
@@ -66,7 +66,7 @@ export default {
           }
         },
         {
-          title: "今年失败构建次数",
+          title: "今年失败任务次数",
           number: {
             number: [14],
             toFixed: 1,
@@ -74,7 +74,7 @@ export default {
           }
         },
         {
-          title: "今年成功构建次数",
+          title: "今年成功任务次数",
           number: {
             number: [106],
             toFixed: 1,
@@ -82,7 +82,7 @@ export default {
           }
         },
         {
-          title: "今年达标组件个数",
+          title: "今年达标任务个数",
           number: {
             number: [100],
             toFixed: 1,
