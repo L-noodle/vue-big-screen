@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="bottomLeftChart" style="width:900px;height:400px;"></div>
+    <div id="bottomLeftChart" style="width:900px;height:500px;"></div>
   </div>
 </template>
 
@@ -133,7 +133,7 @@ export default {
 
       let option = {
         title: {
-          text: "增量设备贯通情况-单位",
+          text: "",
           x: "center",
           y: 0,
           textStyle: {
@@ -158,12 +158,12 @@ export default {
           textStyle: {
             color: "#B4B4B4"
           },
-          top: "7%"
+          top: "0%"
         },
         grid: {
-          x: "12%",
-          width: "82%",
-          y: "12%"
+          x: "8%",
+          width: "88%",
+          y: "4%"
         },
         xAxis: {
           data: category,
@@ -243,9 +243,9 @@ export default {
               normal: {
                 barBorderRadius: 5,
                 color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                  { offset: 0, color: "rgba(156,107,211,0.5)" },
-                  { offset: 0.2, color: "rgba(156,107,211,0.3)" },
-                  { offset: 1, color: "rgba(156,107,211,0)" }
+                  { offset: 0, color: "rgba(156,107,211,0.8)" },
+                  { offset: 0.2, color: "rgba(156,107,211,0.5)" },
+                  { offset: 1, color: "rgba(156,107,211,0.2)" }
                 ])
               }
             },

@@ -2,7 +2,7 @@
   <div id="index">
     <dv-full-screen-container class="bg">
       <dv-loading v-if="loading">Loading...</dv-loading>
-      <div class="host-body">
+      <div v-else class="host-body">
         <div class="d-flex jc-center">
           <dv-decoration-10 style="width:33.3%;height:5px;" />
           <div class="d-flex jc-center">
@@ -83,10 +83,12 @@
 
           <!-- 第四行数据 -->
           <div class="bototm-box">
-            <dv-border-box-1>
+            <dv-border-box-13>
               <bottomLeft />
-            </dv-border-box-1>
-            <div>2</div>
+            </dv-border-box-13>
+            <dv-border-box-12>
+              <bottomRight />
+            </dv-border-box-12>
           </div>
         </div>
       </div>
@@ -101,10 +103,11 @@ import centreRight1 from "./centreRight1";
 import centreRight2 from "./centreRight2";
 import center from "./center";
 import bottomLeft from "./bottomLeft";
+import bottomRight from "./bottomRight";
 export default {
   data() {
     return {
-      loading: false
+      loading: true
     };
   },
   components: {
@@ -113,7 +116,8 @@ export default {
     centreRight1,
     centreRight2,
     center,
-    bottomLeft
+    bottomLeft,
+    bottomRight
   },
   mounted() {
     this.cancelLoading();
