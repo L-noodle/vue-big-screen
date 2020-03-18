@@ -10,10 +10,12 @@
     </div>
     <div class="down">
       <div class="ranking">
-        <dv-scroll-ranking-board :config="ranking"/>
+        <dv-scroll-ranking-board :config="ranking" />
       </div>
       <div class="percent">
-        <div class="item"> </div>
+        <div class="item">
+          <centerChart/>
+        </div>
         <div class="water">
           <dv-water-level-pond :config="water" style="height: 125px" />
         </div>
@@ -23,6 +25,8 @@
 </template>
 
 <script>
+import centerChart from "@/components/echart/centerChart";
+
 export default {
   data() {
     return {
@@ -119,6 +123,9 @@ export default {
         data: [24, 45]
       }
     };
+  },
+  components: {
+    centerChart
   }
 };
 </script>
