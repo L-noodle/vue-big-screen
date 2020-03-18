@@ -63,7 +63,7 @@ a {
 }
 
 .bg-color-black {
-  background-color: #0f1325;
+  background-color: rgba(19, 25, 47, .5);
 }
 
 .bg-color-blue {
@@ -76,6 +76,22 @@ a {
 
   &:hover {
     color: #272727 !important;
+  }
+}
+
+.colorGrass {
+  color: #33CEA0;
+
+  &:hover {
+    color: #33CEA0 !important;
+  }
+}
+
+.colorRed {
+  color: #ff5722;
+
+  &:hover {
+    color: #ff5722 !important;
   }
 }
 

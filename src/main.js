@@ -8,7 +8,7 @@ Vue.use(dataV)
 // 引入vue-awesome
 import Icon from 'vue-awesome/components/Icon'
 import 'vue-awesome/icons/index.js'
-// 全局注册
+// 全局注册图标
 Vue.component('icon', Icon)
 
 import './assets/scss/style.scss'

@@ -26,23 +26,26 @@
         </div>
 
         <!-- 第二行 -->
-        <div class="d-flex jc-between mt-2 px-2">
+        <div class="d-flex jc-between px-2">
           <div class="d-flex" style="width: 40%">
-            <div class="react-right bg-color-black ml-4" style="width: 500px; ">
+            <div
+              class="react-right ml-4"
+              style="width: 500px; text-align: left;background-color: #0f1325;"
+            >
               <span class="react-before"></span>
-              <span class="text">构建数据分析</span>
+              <span class="text fw-b">构建数据分析</span>
             </div>
-            <div class="react-right bg-color-black ml-3">
-              <span class="text colorBlue">构建数据分析</span>
+            <div class="react-right ml-3" style="background-color: #0f1325;">
+              <span class="text colorBlue fw-b">构建数据分析</span>
             </div>
           </div>
           <div style="width: 40%" class="d-flex">
-            <div class="react-left bg-color-black bg-color-blue mr-3">
+            <div class="react-left bg-color-blue mr-3">
               <span class="text fw-b">构建数据分析</span>
             </div>
-            <div class="react-left bg-color-black mr-4" style="width: 500px;">
+            <div class="react-left mr-4" style="width: 500px; background-color: #0f1325;">
               <span class="react-after"></span>
-              <span class="text colorBlue">2020年03月16日</span>
+              <span class="text">2020年03月16日 周一 12:00</span>
             </div>
           </div>
         </div>
@@ -55,11 +58,24 @@
                 <centreLeft1 />
               </dv-border-box-12>
             </div>
-            <div></div>
-            <div class="bg-color-blue"></div>
-            <div></div>
-            <div class="bg-color-blue"></div>
-            <div></div>
+            <div>
+              <dv-border-box-12>
+                <centreLeft2 />
+              </dv-border-box-12>
+            </div>
+            <!-- 中间 -->
+            <div>
+              <center/>
+            </div>
+            <!-- 中间 -->
+            <div>
+              <centreRight2 />
+            </div>
+            <div>
+              <dv-border-box-13>
+                <centreRight1 />
+              </dv-border-box-13>
+            </div>
           </div>
 
           <!-- 第四行数据 -->
@@ -75,13 +91,17 @@
 
 <script>
 import centreLeft1 from "./centreLeft1";
+import centreLeft2 from "./centreLeft2";
+import centreRight1 from "./centreRight1";
+import centreRight2 from "./centreRight2";
+import center from "./center";
 export default {
   data() {
     return {
       loading: false
     };
   },
-  components: { centreLeft1 },
+  components: { centreLeft1, centreLeft2, centreRight1, centreRight2, center },
   mounted() {
     this.cancelLoading();
   },
