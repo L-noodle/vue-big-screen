@@ -83,8 +83,10 @@
 
           <!-- 第四行数据 -->
           <div class="bototm-box">
-            <div></div>
-            <div></div>
+            <dv-border-box-1>
+              <bottomLeft />
+            </dv-border-box-1>
+            <div>2</div>
           </div>
         </div>
       </div>
@@ -98,13 +100,21 @@ import centreLeft2 from "./centreLeft2";
 import centreRight1 from "./centreRight1";
 import centreRight2 from "./centreRight2";
 import center from "./center";
+import bottomLeft from "./bottomLeft";
 export default {
   data() {
     return {
       loading: false
     };
   },
-  components: { centreLeft1, centreLeft2, centreRight1, centreRight2, center },
+  components: {
+    centreLeft1,
+    centreLeft2,
+    centreRight1,
+    centreRight2,
+    center,
+    bottomLeft
+  },
   mounted() {
     this.cancelLoading();
   },
