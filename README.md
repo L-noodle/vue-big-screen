@@ -81,7 +81,7 @@ watch: {
 methods: {
   drawPie() {
   	.....
-  	渲染节点名称.setOption(option);
+  	'渲染节点名称'.setOption(option);
   }
  }
 ```
@@ -89,7 +89,7 @@ methods: {
 3. **如何更换边框**
    边框是使用了 DataV 自带的组件，如：
 
-```js
+```html
 <dv-border-box-1></dv-border-box-1>
 ```
 
