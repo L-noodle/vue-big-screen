@@ -12,7 +12,7 @@
 4.  [项目 gitee 地址（国内速度快）](https://gitee.com/MTrun/big-screen-vue-datav)
 
 项目截图（展示动态）
-![](https://images.gitee.com/uploads/images/2020/0318/220710_4b0bf590_4964818.png)
+![](https://images.gitee.com/uploads/images/2020/0411/221307_0f8af2e7_4964818.gif)
 
 ## 二、主要文件介绍
 
